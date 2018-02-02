@@ -15,7 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# 
+from django.conf.urls import url
+from .import views
+#
 
-urlpatterns = [
+# Ships w/ default URL
+# Steps:
+# Create an about and home page.
+# Create a view.py file - continue there
+# So now we need to import the views.py file so we can reference it
+# Hook the function in
+# Repeat this process for the other page.
+# Now run this inthe server
+# it woeks!!!
+urlpatterns = [ 
     path('admin/', admin.site.urls),
-]
+    path('about/',views.about),
+    path('',views.home),]
