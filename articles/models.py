@@ -11,3 +11,6 @@ class Article(models.Model): #Inheriting basic functionaliites
 	#thumbnail
 	author =  models.CharField(max_length=100,default='Me')
 
+	def __str__(self):
+		return self.title	
+
