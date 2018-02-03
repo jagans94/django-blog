@@ -6,7 +6,8 @@ class Article(models.Model): #Inheriting basic functionaliites
 	title = models.CharField(max_length=100)
 	slug = models.SlugField()
 	body = models.TextField()
-	date = model.DataTimeField(auto_now_add=True)
+	date = models.DateTimeField(auto_now_add=True)
+	# add later
 	#thumbnail
-	#author
+	author =  models.CharField(max_length=100,default='Me')
 
