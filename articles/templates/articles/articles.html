@@ -4,7 +4,15 @@
 	<title>Articles</title>
 </head>
 <body>
-<h1>Yo, you looking at the articles section, son!</h1>
-<p>Are you prepared for what it takes to read this?</p>
+<h1>Articles</h1>
+<div class="articles">
+	{% for article in articles %}
+	<div class="article">
+		<h2><a href="#"> {{article.title}}</a></h2>
+		<p>{{ article.body }} </p>
+		<p>{{ article.date }} </p>		
+	</div>
+	{% endfor %}
+</div>
 </body>
 </html>
