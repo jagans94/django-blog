@@ -7,8 +7,7 @@ class Article(models.Model):  # Inheriting basic functionaliites
     slug = models.SlugField()
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
-    # add later
-    # thumbnail
+    thumbnail = models.ImageField(default='default.png',blank=True)
     author = models.CharField(max_length=100, default='Me')
 
     def __str__(self):

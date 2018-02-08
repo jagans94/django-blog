@@ -12,4 +12,9 @@ def articles(request):
 	return render(request,'articles/articles.html',context)
 
 def article_details(request,slug):
-	return HttpResponse(slug)
+	#return HttpResponse(slug)
+	article = Article.objects.get(slug=slug)
+	context = {
+		"article" : article
+	}
+	return render(request,'articles/article_details.html',context)
