@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
-</head>
-<body>
-	<h1>This is the home page.</h1>
-	<p>Welcome to my 'blog'.</p>
-	<ol>
-		<li><a href="articles/">Articles</a></li>
-		<li><a href="about/">About</a></li>
-		<li><a href="admin/">Login</a></li>
-	</ol>
-</body>
-</html>  
+{% extends 'layout.html' %}
+
+{% block django %}
+<a href="{% url 'home' %}"><img src="{% static 'logo.gif' %}"></a>	
+{% endblock %}
+
+{% block content %}
+<h1>Django Unchained - Home</h1>
+<ol>
+	<li><a href="/admin">Login</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/articles">Articles</a></li>
+</ol>
+{% endblock %}
