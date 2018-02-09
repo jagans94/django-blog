@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Signed out</title>	
+{% endblock %}
+
+{% block content %}
+<h1>Signed Out</h1>
+<div class="account">
+	<p>	
+		You are successfully signed out. <br>
+		Want to sign in again. Click the button.
+	</p>
+	<button formaction="{% url 'accounts:signin' %}" value="Sign In">
+</div>
+{% endblock %}
