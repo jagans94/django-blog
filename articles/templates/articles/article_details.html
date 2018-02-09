@@ -5,12 +5,13 @@
 {% endblock %}
 
 {% block content %}
-<div class="article_details">
+<div class="article-detail">
 	<div class="article">
+	<img class="thumb" src="{{ article.thumbnail.url }}">
 	<h1> {{article.title}} </h1>
 	<p>{{ article.body }} </p>
 	<p>{{ article.date }} </p>	
-	<img src="{{ article.thumbnail.url }}">
+	
 </div>
 </div>
 {% endblock %}

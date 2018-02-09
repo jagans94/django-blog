@@ -8,6 +8,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings
 
+import articles
+
 urlpatterns = [ 
 	path('',views.home, name='home'),
     path('admin/', admin.site.urls),	

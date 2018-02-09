@@ -6,7 +6,7 @@
 
 {% block content %}
 <div class="article_create">
-	<h2>Create an awesome article.</h2>
+	<h1>Create an awesome article.</h1>
 	<form class="site-form" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data">
 		{% csrf_token %}
 		{{ form }}
@@ -14,4 +14,5 @@
 	</form>
 </div>
 </div>
+<script src="/static/slugify.js"></script>
 {% endblock %}
