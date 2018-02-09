@@ -6,5 +6,6 @@ app_name = 'articles'
 
 urlpatterns = [
     re_path(r'^$',views.articles,name='list'),
+    re_path(r'^create/$',views.article_create,name='create'),
     re_path(r'^(?P<slug>[\w-]+)/$',views.article_details,name='details'),
     ]
