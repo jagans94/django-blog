@@ -1,2 +1,3 @@
 # django-blog
-Simple django-cms app for managing articles and users.
+
+Created a simple django-based web app for purposes of self-review.
